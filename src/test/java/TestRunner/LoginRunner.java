@@ -1,20 +1,17 @@
-package testRunner;
-
+package TestRunner;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"features/"},
-        glue = {"testDefinitionSample"},
-        plugin = { "pretty",
+        features = {"src/features/"},
+        glue = {"Login"},
+        plugin = {
+                "pretty",
                 "html:target/cucumber-reports/report.html",
                 "json:target/cucumber-reports/cucumber.json"
-        },
-        monochrome = true
+        }
 )
-
-public class Runner {
-
+public class LoginRunner {
 }
