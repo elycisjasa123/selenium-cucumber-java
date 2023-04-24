@@ -13,7 +13,7 @@ public class LoginTest {
 
     @Given("I am on Swag Labs login page")
     public void goToSwagLabsLogin(){
-        System.setProperty("webdriver.chrome.driver", "/home/ubuntu/Documents/chromedriver_linux64/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver_linux64/chromedriver");
         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com/");
     }
